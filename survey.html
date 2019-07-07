@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    
+    <title>Formulario</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-3"></div>
+			<div class="col-sm-6">
+				<h1 id="title"style="text-decoration: underline solid red;">
+					Tus datos personales
+				</h1>
+				<p id="description">Rellene el siguiente formulario para poder ponernos en contacto con usted.</p>
+				<form id="survey-form" action="formularioCompleto.php" method="post" enctype="multipart/form-data">
+					<label id="name-label" for="nombre">Nombre Completo</label><br>
+					<input id="name" type="text" class="form-control" name="nombre" placeholder="Ej:Maria Rosa, José Juan, Antonio" autofocus required>
+					<br>
+					<label id="email-label" for="email">Correo electrónico:</label><br>
+					<input type="email" class="form-control" id="email" name="email" placeholder="Ej: email@gmail.com" required><br>
+					<label id="number-label" for="edad">Edad</label><br>
+					<input id="number" type="number" class="form-control" name="edad" min="1" max="31" step="1" placeholder="Edad" required>
+					<br>
+					<label for="sexo">Sexo</label><br>
+					<select class="form-control" name="sexo" id="dropdown" required>
+						<option value="hombre">Hombre</option>
+						<option value="mujer">Mujer</option>
+					</select><br>
+					
+					<label for="mes">Elija un mes:</label><br> <input type="radio" name="mes" value="enero" checked>Enero<br>
+					<input type="radio" name="mes" value="febrero">Febrero<br>
+					<input type="radio" name="mes" value="marzo">Marzo<br>
+					<input type="radio" name="mes" value="abril">Abril<br>
+					<input type="radio" name="mes" value="mayo">Mayo<br>
+					<input type="radio" name="mes" value="junio">Junio<br>
+					<input type="radio" name="mes" value="julio">Julio<br>
+					<input type="radio" name="mes" value="agosto">Agosto<br>
+					<input type="radio" name="mes" value="septiembre">Septiembre<br>
+					<input type="radio" name="mes" value="octubre">Octubre<br>
+					<input type="radio" name="mes" value="noviembre">Noviembre<br>
+					<input type="radio" name="mes" value="diciembre">Diciembre<br>
+					<br>
+					<input type="checkbox" name="suscripcion" value="Selected">Suscribirme al boletin de novedades<br>
+					<input type="checkbox" name="suscripcion">Suscribirme al boletin de otra revista<br>
+					<label for="message">Comentarios</label>
+					<textarea name="message" rows="5" cols="70">
+							
+					</textarea> <br>
+							<input id="submit" type="submit" value="Guardar cambios" name="submit">
+
+				</form>
+				
+			</div>
+		</div>
+		
+	</div>
+
+</body>
+</html>
