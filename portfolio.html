@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    <title>Alberto Saldaña Contreras</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet"> 
+  
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+  <style>
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 2.5em;
+    }
+} 
+
+ #welcome-section{
+    background-color: midnightblue;
+    color: crimson;
+    height: 100vh;
+ }
+
+ #welcome-section h1{
+    font-size: 3em;
+ }
+
+ #projects{
+     background-color:lightgreen;
+     color:mediumblue;
+     font-size: 2em;
+ }
+
+ #profile{
+     background-color: coral;
+     color: cornflowerblue;
+ }
+
+ #profile h1{
+     font-size: 4em;
+ }
+
+#profile-link{
+    transform: scale(3);
+}
+ 
+  body {
+      position: relative; 
+      font-family: 'Josefin Sans', sans-serif;
+  }
+
+  .project-tile{
+      height: 10cm;
+  }
+  </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-sm bg-grey navbar-light sticky-top d-flex justify-content-between">
+      
+      <ul class="navbar-nav ">
+    <li class="nav-item">
+      <a class="navbar-brand rounded-circle m-4"   href="#">Logo</a>
+      </li>
+    <li class="nav-item">
+      <a class="nav-link shadow-lg p-4 mb-4 bg-white rounded m-2" href="#welcome-section">Welcome</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link shadow-lg p-4 mb-4 bg-white rounded m-2" href="#projects">Projects</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link shadow-lg p-4 mb-4 bg-white rounded m-2" href="#profile">Profile</a>
+    </li>
+    
+  </ul>
+    </nav> 
+
+
+<section id="welcome-section" class="container-fluid text-center p-5 mt-n4">
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <h1>Hello, I'm <strong>Alberto Saldaña Contreras</strong> </h1>
+        <h2>Web developer</h2>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</section>
+<section id="projects" class="container-fluid ">
+        <div class="card-deck p-5">
+                <div class="flex col-10 col-sm-10 col-md-6 col-lg-6 col-xl-6 text-center "><p>Tribute</p>
+                    <div class="card project-tile">
+                            <img class="card-img-top" src="images/tribute.png" alt="Tribute project" style="width:100%">
+                            <div class="card-body">
+                                    <a class="card-link stretched-link" href="https://github.com/alsaco018/freeCodeCamp/blob/master/tribute.html"></a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                
+                <div class="flex col-10 col-sm-10 col-md-6 col-lg-6 col-xl-6 text-center "><p>Survey</p>
+                    <div class="card project-tile ">
+                            <img class="card-img-top" src="images/survey.png" alt="Survey project" style="width:100%">
+                            <div class="card-body">
+                                    <a class="card-link stretched-link" href="https://github.com/alsaco018/freeCodeCamp/blob/master/survey.html"></a>
+                            </div>
+                          </div>
+                </div>
+                <div class="flex col-10 col-sm-10 col-md-6 col-lg-6 col-xl-6 text-center "><p>Product</p>
+                    <div class="card project-tile">
+                            <img class="card-img-top" src="images/product.png" alt="Product project">
+                            <div class="card-body">
+                                    <a class="card-link stretched-link" href="https://github.com/alsaco018/freeCodeCamp/blob/master/product.html"></a>
+                            </div>
+                          </div>
+                </div>
+                <div class="flex col-10 col-sm-10 col-md-6 col-lg-6 col-xl-6 text-center "><p>Technical documentation</p>
+                    <div class="card project-tile">
+                            <img class="card-img-top" src="images/technical.png" alt="Technical project">
+                            <div class="card-body">
+                                    <a class="card-link stretched-link" href="https://github.com/alsaco018/freeCodeCamp/blob/master/technical.html"></a>
+                            </div>
+                          </div> 
+                </div> 
+              </div>
+</section>
+<section id="profile" class="container-fluid p-5 text-center">
+  <h1>You can find me</h1>
+  <div class="contact-links m-5 ">
+        <a id="profile-link" class="btn contact-details m-5" href="https://github.com/alsaco018" target="_blank">
+            <span class="fab fa-github"></span>Github
+        </a>
+  </div>
+</section>
+
+</body>
+</html>
